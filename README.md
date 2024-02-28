@@ -2,7 +2,6 @@
 
 This starter lets you get started with [NuxtHub](https://hub.nuxt.com) in seconds.
 
-- [Play on Stackblitz](https://stackblitz.com/github/nuxt-hub/starter)
 - [Documentation](https://hub.nuxt.com)
 
 ## Features
