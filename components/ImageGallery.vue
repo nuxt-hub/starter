@@ -30,7 +30,7 @@ async function deleteImage (pathname: string) {
         v-for="image of images"
         :key="image.pathname"
         width="200"
-        :src="`/api/images/${image.pathname}`"
+        :src="`/images/${image.pathname}`"
         :alt="image.pathname"
         @dblclick="deleteImage(image.pathname)"
       >
