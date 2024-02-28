@@ -6,6 +6,7 @@ async function uploadImage (e: any) {
     method: 'POST',
     body: new FormData(e.target as HTMLFormElement)
   }).catch((err) => alert('Failed to upload image:\n'+ err.data?.message))
+  e.target.reset()
   await refresh()
 }
 
@@ -33,6 +34,9 @@ async function deleteImage (pathname: string) {
         :alt="image.pathname"
         @dblclick="deleteImage(image.pathname)"
       >
+    </p>
+    <p v-if="images?.length">
+      <i>Tip: delete an image by double-clicking on it.</i>
     </p>
   </div>
 </template>
