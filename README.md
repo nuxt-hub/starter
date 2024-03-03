@@ -80,4 +80,4 @@ yarn preview
 bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxthub-module.pages.dev/docs/getting-started/deploy) for more information.
+Check out the [deployment documentation](https://hub.nuxt.com/docs/getting-started/deploy) for more information.
