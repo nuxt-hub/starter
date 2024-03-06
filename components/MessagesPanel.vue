@@ -10,6 +10,7 @@ async function sendMessage (){
       text: newMessage.value
     }
   })
+  newMessage.value = ''
   await refresh()
 }
 </script>
