@@ -64,20 +64,4 @@ yarn build
 bun run build
 ```
 
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
 Check out the [deployment documentation](https://hub.nuxt.com/docs/getting-started/deploy) for more information.
