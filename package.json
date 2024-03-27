@@ -12,13 +12,13 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "@nuxthub/core": "^0.3.9",
+    "@nuxthub/core": "^0.3.11",
     "nuxt": "^3.11.1"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.2.0",
     "eslint": "^8.57.0",
     "vue-tsc": "^2.0.7",
-    "wrangler": "^3.37.0"
+    "wrangler": "^3.39.0"
   }
 }
