@@ -7,7 +7,7 @@ This starter lets you get started with [NuxtHub](https://hub.nuxt.com) in second
 ## Features
 
 - Image upload with [`hubBlob()`](http://hub.nuxt.com/docs/storage/blob)
-- Save chat messages with [`hubDatababse()`](http://hub.nuxt.com/docs/storage/database)
+- Save chat messages with [`hubDatabase()`](http://hub.nuxt.com/docs/storage/database)
 - Save server redirects with [`hubKV()`](http://hub.nuxt.com/docs/storage/kv)
 
 ## Setup
