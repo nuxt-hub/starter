@@ -1,10 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  extends: ['@nuxthub/core'],
   devtools: { enabled: true },
+  modules: ['@nuxthub/core'],
   nitro: {
     experimental: {
-      // Enable Server API documentation within NuxtHUb
+      // Enable Server API documentation within NuxtHub
       openAPI: true
     }
   }
