@@ -1,12 +1,13 @@
 <script setup lang="ts">
 const { data: images, refresh } = await useFetch('/api/images')
 
-async function uploadImage (e: any) {
+async function uploadImage (e: Event) {
+  const form = e.target as HTMLFormElement
   await $fetch('/api/images/upload', {
     method: 'POST',
-    body: new FormData(e.target as HTMLFormElement)
+    body: new FormData(form)
   }).catch((err) => alert('Failed to upload image:\n'+ err.data?.message))
-  e.target.reset()
+  form.reset()
   await refresh()
 }
 
