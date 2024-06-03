@@ -1,3 +1,5 @@
 export default eventHandler(async () => {
-  return hubBlob().list()
+  const { blobs } = await hubBlob().list()
+
+  return blobs
 })

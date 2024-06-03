@@ -2,13 +2,17 @@
 const { data: images, refresh } = await useFetch('/api/images')
 
 async function uploadImage (e: Event) {
+  // https://hub.nuxt.com/docs/storage/blob#useupload
+  const upload = useUpload('/api/images/upload', {
+    multiple: false
+  })
   const form = e.target as HTMLFormElement
-  await $fetch('/api/images/upload', {
-    method: 'POST',
-    body: new FormData(form)
-  }).catch((err) => alert('Failed to upload image:\n'+ err.data?.message))
-  form.reset()
-  await refresh()
+  await upload(form.image)
+    .then(async () => {
+      form.reset()
+      await refresh()
+    })
+    .catch((err) => alert('Failed to upload image:\n'+ err.data?.message))
 }
 
 async function deleteImage (pathname: string) {
@@ -21,7 +25,7 @@ async function deleteImage (pathname: string) {
   <div>
     <h3>Images</h3>
     <form @submit.prevent="uploadImage">
-      <label>Upload an image: <input type="file" name="image"></label>
+      <label>Upload an image: <input type="file" name="image" accept="image/jpg,image/png"></label>
       <button type="submit">
         Upload
       </button>

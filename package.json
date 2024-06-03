@@ -12,14 +12,14 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "@nuxt/eslint": "^0.3.12",
-    "@nuxthub/core": "^0.5.17",
+    "@nuxt/eslint": "^0.3.13",
+    "@nuxthub/core": "^0.6.1",
     "nuxt": "^3.11.2"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "^0.3.12",
-    "eslint": "^9.2.0",
-    "vue-tsc": "^2.0.18",
-    "wrangler": "^3.56.0"
+    "@nuxt/eslint-config": "^0.3.13",
+    "eslint": "^9.4.0",
+    "vue-tsc": "^2.0.19",
+    "wrangler": "^3.58.0"
   }
 }
