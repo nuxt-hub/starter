@@ -7,7 +7,7 @@ async function uploadImage (e: Event) {
     multiple: false
   })
   const form = e.target as HTMLFormElement
-  await upload(form.image)
+  await upload([...form.image.files])
     .then(async () => {
       form.reset()
       await refresh()
