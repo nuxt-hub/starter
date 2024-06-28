@@ -14,20 +14,10 @@ This starter lets you get started with [NuxtHub](https://hub.nuxt.com) in second
 
 ## Setup
 
-Make sure to install the dependencies:
+Make sure to install the dependencies with [pnpm](https://pnpm.io).
 
 ```bash
-# npm
-npm install
-
-# pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
 ## Development Server
@@ -35,17 +25,7 @@ bun install
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+pnpm dev
 ```
 
 ## Production
@@ -53,17 +33,20 @@ bun run dev
 Build the application for production:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+pnpm build
 ```
 
 Check out the [deployment documentation](https://hub.nuxt.com/docs/getting-started/deploy) for more information.
+
+## Deploy
+
+Deploy the application on the Edge with [NuxtHub](https://hub.nuxt.com) on your Cloudflare account:
+
+```bash
+npx nuxthub deploy
+```
+
+Then checkout your server logs, analaytics and more in the [NuxtHub Admin](https://admin.hub.nuxt.com).
+
+You can also deploy using [Cloudflare Pages CI](https://hub.nuxt.com/docs/getting-started/deploy#cloudflare-pages-ci).
+
