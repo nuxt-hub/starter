@@ -19,6 +19,6 @@
     "@nuxt/eslint-config": "^0.4.0",
     "eslint": "^9.8.0",
     "vue-tsc": "^2.0.29",
-    "wrangler": "3.67.1"
+    "wrangler": "3.68.0"
   }
 }
