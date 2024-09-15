@@ -13,14 +13,14 @@
   },
   "dependencies": {
     "@nuxt/eslint": "^0.5.7",
-    "@nuxthub/core": "^0.7.14",
+    "@nuxthub/core": "^0.7.15",
     "nuxt": "^3.13.1"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.5.7",
     "eslint": "^9.10.0",
     "vue-tsc": "^2.1.6",
-    "wrangler": "3.77.0"
+    "wrangler": "3.78.2"
   },
   "packageManager": "pnpm@9.10.0"
 }
