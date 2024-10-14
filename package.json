@@ -5,22 +5,22 @@
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt build",
-    "preview": "nuxthub preview",
-    "deploy": "nuxthub deploy",
+    "preview": "npx nuxthub preview",
+    "deploy": "npx nuxthub deploy",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "@nuxt/eslint": "^0.5.7",
-    "@nuxthub/core": "^0.7.15",
-    "nuxt": "^3.13.1"
+    "@nuxt/eslint": "^0.6.0",
+    "@nuxthub/core": "^0.7.29",
+    "nuxt": "^3.13.2"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "^0.5.7",
-    "eslint": "^9.10.0",
+    "@nuxt/eslint-config": "^0.6.0",
+    "eslint": "^9.12.0",
     "vue-tsc": "^2.1.6",
-    "wrangler": "3.78.2"
+    "wrangler": "3.80.4"
   },
-  "packageManager": "pnpm@9.10.0"
+  "packageManager": "pnpm@9.12.1"
 }
