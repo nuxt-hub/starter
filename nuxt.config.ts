@@ -23,5 +23,11 @@ export default defineNuxtConfig({
     }
   },
   // Development
-  devtools: { enabled: true },
+  devtools: {
+    enabled: true,
+
+    timeline: {
+      enabled: true,
+    },
+  },
 })
