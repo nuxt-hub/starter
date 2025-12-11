@@ -37,14 +37,6 @@ pnpm build
 
 ## Deploy
 
-### Cloudflare
-
-```bash
-npm run deploy-cloudflare
-```
-
-Wrangler will create the necessary resources on your Cloudflare account.
-
 ### Vercel
 
 On the Vercel dashboard -> Storage, create a Turso SQLite database, Redis database, and Vercel Blob store
@@ -54,3 +46,15 @@ npm run deploy-vercel
 ```
 
 Link the newly created resources to your project and re-deploy.
+
+You can also connect using your git repository to leverage Vercel's CI/CD pipeline.
+
+### Cloudflare
+
+```bash
+npm run deploy-cloudflare
+```
+
+Wrangler will create the necessary resources on your Cloudflare account.
+
+You can also connect using your git repository to leverage Cloudflare's CI/CD pipeline.
