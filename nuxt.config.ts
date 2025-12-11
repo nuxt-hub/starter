@@ -5,17 +5,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
   ],
   devtools: { enabled: true },
-  compatibilityDate: '2025-04-25',
-
-  nitro: {
-    experimental: {
-      openAPI: true,
-    },
-    cloudflare: {
-      deployConfig: true,
-      nodeCompat: true,
-    },
-  },
+  compatibilityDate: '2025-12-11',
 
   hub: {
     db: 'sqlite',

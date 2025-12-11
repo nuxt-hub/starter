@@ -10,7 +10,6 @@ This starter lets you get started with [NuxtHub](https://hub.nuxt.com) in second
 - Save chat messages with [NuxtHub Database](https://hub.nuxt.com/docs/features/database) from `hub:db` (Drizzle ORM)
 - Save server redirects with [NuxtHub KV](https://hub.nuxt.com/docs/features/kv) from `hub:kv`
 - Cache an API response with [NuxtHub Cache](https://hub.nuxt.com/docs/features/cache)
-- Generate the API documentation with [Scalar](https://scalar.nuxt.com) via Nitro OpenAPI
 
 ## Setup
 
