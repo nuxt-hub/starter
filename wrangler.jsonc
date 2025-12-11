@@ -16,21 +16,25 @@
 	"d1_databases": [
 		{
 			"binding": "DB",
-            "migrations_table": "_hub_migrations",
-            "migrations_dir": ".output/server/db/migrations/sqlite/",
+      "database_id": "a30aa564-d388-493b-8994-23f8dfd129f5",
+      "migrations_table": "_hub_migrations",
+      "migrations_dir": ".output/server/db/migrations/sqlite/",
 		}
 	],
 	"kv_namespaces": [
 		{
 			"binding": "KV",
+      "id": "ba6f3913de344cb1a833f3cf20ba5aa8"
 		},
 		{
 			"binding": "CACHE",
+      "id": "ba6f3913de344cb1a833f3cf20ba5aa8"
 		}
 	],
 	"r2_buckets": [
 		{
 			"binding": "BLOB",
+      "bucket_name": "hub-starter-p2s5"
 		}
 	],
 }
