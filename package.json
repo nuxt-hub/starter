@@ -5,24 +5,29 @@
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt build",
-    "preview": "npx nuxthub preview",
-    "deploy": "npx nuxthub deploy",
+    "deploy-cloudflare": "NITRO_PRESET=cloudflare_module npm run build && npx wrangler deploy && npx wrangler d1 migrations apply DB --remote",
+    "deploy-vercel": "npx vercel deploy",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "@nuxt/eslint": "^1.4.1",
-    "@nuxthub/core": "^0.9.0",
-    "nuxt": "^3.17.5"
+    "@libsql/client": "^0.15.15",
+    "@nuxt/eslint": "^1.12.1",
+    "@nuxthub/core": "^0.10.0",
+    "@upstash/redis": "^1.35.7",
+    "@vercel/blob": "^2.0.0",
+    "drizzle-kit": "^0.31.8",
+    "drizzle-orm": "^0.45.1",
+    "nuxt": "^4.2.2"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "^1.4.1",
-    "eslint": "^9.29.0",
-    "vue-tsc": "^2.2.10",
-    "wrangler": "4.20.1"
+    "@nuxt/eslint-config": "^1.12.1",
+    "eslint": "^9.39.1",
+    "vue-tsc": "^3.1.8",
+    "wrangler": "4.53.0"
   },
-  "packageManager": "pnpm@10.12.1",
+  "packageManager": "pnpm@10.25.0",
   "pnpm": {
     "onlyBuiltDependencies": [
       "@parcel/watcher",

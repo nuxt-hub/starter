@@ -6,6 +6,7 @@
 .cache
 dist
 .wrangler
+.vercel
 
 # Node dependencies
 node_modules

@@ -1,27 +1,32 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-04-25',
-  // Nuxt 4 directory structure and features
-  // https://nuxt.com/docs/getting-started/upgrade#testing-nuxt-4
-  future: { compatibilityVersion: 4 },
-  // Nuxt Modules
-  // https://nuxt.com/modules
   modules: [
     '@nuxthub/core',
-    '@nuxt/eslint'
+    '@nuxt/eslint',
   ],
+  devtools: { enabled: true },
+  compatibilityDate: '2025-04-25',
+
+  nitro: {
+    experimental: {
+      openAPI: true,
+    },
+    cloudflare: {
+      deployConfig: true,
+      nodeCompat: true,
+    },
+  },
+
   hub: {
-    database: true,
+    db: 'sqlite',
     kv: true,
     blob: true,
     cache: true,
   },
-  nitro: {
-    experimental: {
-      // Enable Server API documentation within NuxtHub
-      openAPI: true
-    }
+
+  eslint: {
+    config: {
+      stylistic: true,
+    },
   },
-  // Development
-  devtools: { enabled: true },
 })

@@ -1,5 +1,7 @@
+import { blob } from 'hub:blob'
+
 export default eventHandler(async (event) => {
   const { pathname } = event.context.params || {}
 
-  return hubBlob().delete(pathname)
+  return blob.delete(pathname)
 })

@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1765423539366,
+      "tag": "0000_dapper_thena",
+      "breakpoints": true
+    }
+  ]
+}

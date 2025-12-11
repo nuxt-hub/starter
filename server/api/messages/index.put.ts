@@ -1,11 +1,12 @@
+import { db, schema } from 'hub:db'
+import { eq } from 'drizzle-orm'
+
 export default eventHandler(async (event) => {
   const { messageID, text }: { messageID: number, text: string } = await readBody(event)
-  const db = hubDatabase()
 
-  await db
-    .prepare('UPDATE messages SET text = ?1 WHERE id = ?2')
-    .bind(text, messageID)
-    .run()
+  await db.update(schema.messages)
+    .set({ text })
+    .where(eq(schema.messages.id, messageID))
 
   return {}
 })

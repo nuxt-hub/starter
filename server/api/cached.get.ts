@@ -3,8 +3,8 @@
 
 export default cachedEventHandler(() => {
   return {
-    now: Date.now()
+    now: Date.now(),
   }
 }, {
-  maxAge: 5 // 5 seconds
-});
+  maxAge: 5, // 5 seconds
+})

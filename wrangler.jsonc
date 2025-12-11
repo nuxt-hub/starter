@@ -1,0 +1,36 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+    "observability": {
+        "logs": {
+          "enabled": true,
+          "head_sampling_rate": 1,
+          "persist": true,
+          "invocation_logs": true
+        },
+        "traces": {
+          "enabled": true,
+          "head_sampling_rate": 1,
+          "persist": true
+        }
+    },
+	"d1_databases": [
+		{
+			"binding": "DB",
+            "migrations_table": "_hub_migrations",
+            "migrations_dir": ".output/server/db/migrations/sqlite/",
+		}
+	],
+	"kv_namespaces": [
+		{
+			"binding": "KV",
+		},
+		{
+			"binding": "CACHE",
+		}
+	],
+	"r2_buckets": [
+		{
+			"binding": "BLOB",
+		}
+	],
+}
