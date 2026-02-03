@@ -1,5 +1,6 @@
 {
   "name": "nuxthub-starter",
+  "version": "0.0.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -27,14 +28,5 @@
     "vue-tsc": "^3.1.8",
     "wrangler": "4.54.0"
   },
-  "packageManager": "pnpm@10.25.0",
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@parcel/watcher",
-      "esbuild",
-      "sharp",
-      "unrs-resolver",
-      "workerd"
-    ]
-  }
+  "packageManager": "pnpm@10.25.0"
 }
