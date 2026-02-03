@@ -12,29 +12,20 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "@libsql/client": "^0.15.15",
-    "@nuxt/eslint": "^1.12.1",
-    "@nuxthub/core": "^0.10.1",
-    "@upstash/redis": "^1.35.7",
-    "@vercel/blob": "^2.0.0",
+    "@libsql/client": "^0.17.0",
+    "@nuxt/eslint": "^1.13.0",
+    "@nuxthub/core": "^0.10.6",
+    "@upstash/redis": "^1.36.2",
+    "@vercel/blob": "^2.0.1",
     "drizzle-kit": "^0.31.8",
     "drizzle-orm": "^0.45.1",
-    "nuxt": "^4.2.2"
+    "nuxt": "^4.3.0"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "^1.12.1",
-    "eslint": "^9.39.1",
-    "vue-tsc": "^3.1.8",
-    "wrangler": "4.54.0"
+    "@nuxt/eslint-config": "^1.13.0",
+    "eslint": "^9.39.2",
+    "vue-tsc": "^3.2.4",
+    "wrangler": "4.62.0"
   },
-  "packageManager": "pnpm@10.25.0",
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@parcel/watcher",
-      "esbuild",
-      "sharp",
-      "unrs-resolver",
-      "workerd"
-    ]
-  }
+  "packageManager": "pnpm@10.28.2"
 }
