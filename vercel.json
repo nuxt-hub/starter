@@ -1,3 +1,0 @@
-{
-  "integrations": ["sqlite", "kv", "blob"]
-}
